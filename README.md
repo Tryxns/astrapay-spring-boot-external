@@ -11,7 +11,8 @@ git clone git@github.com:Tryxns/astrapay-spring-boot-external.git
 ### Assumption:
 1. Note title / header is optional (allowed to be blank, inspired from GoogleKeep, SamsungNote)
 
-### APIs:
+### API Endpoints:
+
 - Get all notes
 
 [GET] Endpoint: ```/v1/notes```
@@ -23,17 +24,13 @@ git clone git@github.com:Tryxns/astrapay-spring-boot-external.git
 ![astrapay_get_single](https://github.com/user-attachments/assets/09191820-2a36-4583-9699-3114a3be04a4)
 
 - Add a new note
-[POST] Endpoint:
-```
-/v1/notes
-```
+
+[POST] Endpoint: ```/v1/notes```
 ![astrapay_post](https://github.com/user-attachments/assets/fd1a7386-2445-4894-9355-5aee0060396b)
 
 - Remove a note
-[DELETE] Endpoint:
-```
-/v1/notes/{sequence_id}
-```
+
+[DELETE] Endpoint: ```/v1/notes/{sequence_id}```
 ![astrapay_delete](https://github.com/user-attachments/assets/46895ba0-0d11-4f64-ae00-5e3385a99ea3)
 
 - Validation for empty note content
