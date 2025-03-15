@@ -12,19 +12,14 @@ git clone git@github.com:Tryxns/astrapay-spring-boot-external.git
 1. Note title / header is optional (allowed to be blank, inspired from GoogleKeep, SamsungNote)
 
 ### APIs:
-
 - Get all notes
-[GET] Endpoint:
-```
-/v1/notes
-```
+
+[GET] Endpoint: ```/v1/notes```
 ![astrapay_get_all](https://github.com/user-attachments/assets/209a9b42-30b2-47d6-8d14-e988879ff1cb)
 
 - Get a note
-[GET] Endpoint:
-```
-/v1/notes/{sequence_id}
-```
+
+[GET] Endpoint: ```/v1/notes/{sequence_id}```
 ![astrapay_get_single](https://github.com/user-attachments/assets/09191820-2a36-4583-9699-3114a3be04a4)
 
 - Add a new note
