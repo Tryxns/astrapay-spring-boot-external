@@ -1,15 +1,17 @@
 # Spring Boot Astrapay Base Project
 Simple Note Application Project using Spring Boot
 
-## Setup:  
+### Setup:  
 1. Clone this repo
 ```
 git clone git@github.com:Tryxns/astrapay-spring-boot-external.git
 ```
 2. Run AstrapayBaseExternal.java via your IDE (IntelliJ / Eclipse)
 
+### Assumption:
+1. Note title / header is optional (allowed to be blank, inspired from GoogleKeep, SamsungNote)
 
-## APIs:
+### APIs:
 
 - Get all notes
 [GET] Endpoint:
