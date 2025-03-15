@@ -41,9 +41,9 @@ public class NotesController {
 
     @DeleteMapping("/{sequence_id}")
     @ApiOperation(value = "Delete a note")
-    public ResponseEntity<NotesDto> delNotes(@PathVariable String sequence_id){
+    public ResponseEntity.HeadersBuilder<?> delNotes(@PathVariable String sequence_id){
         noteService.delNotes(sequence_id);
-        return ResponseEntity.ok().build();
+        return ResponseEntity.noContent();
     }
 
 }
