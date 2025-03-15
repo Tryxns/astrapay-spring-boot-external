@@ -1,5 +1,6 @@
 package com.astrapay.service;
 import com.astrapay.dto.NotesDto;
+import com.astrapay.exception.ExampleException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
@@ -19,6 +20,9 @@ public class NotesService {
         return notebook.get(Integer.parseInt(sequence_id));
     }
     public NotesDto addNotes(@Valid NotesDto notesdto) {
+        if(notesdto.getContent().isBlank()){
+            throw new ExampleException("Note content can't blank");
+        }
         notebook.add(notesdto);
         return notesdto;
     }
